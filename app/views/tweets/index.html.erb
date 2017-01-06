@@ -3,8 +3,10 @@
 <ul>
     <% @tweets.each do |tweet| %>
         <li>
-            <strong><%= tweet.handle %></strong> - <%= tweet.content %>
-            <%= link_to "More info", tweet_path(tweet) %>
+            <strong><%= tweet.handle %></strong>
+            <%= time_ago_in_words(Date.today - 1) %> ago<br> 
+            <%= tweet.content %><br>
+            <%= link_to "View Tweet", tweet_path(tweet) %>
         </li>
     <% end %>
 </ul>
