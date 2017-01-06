@@ -1,0 +1,14 @@
+<h1>Tweets</h1>
+
+<ul>
+    <% @tweets.each do |tweet| %>
+        <li>
+            <strong><%= tweet.handle %></strong> - <%= tweet.content %>
+            <%= link_to "More info", tweet_path(tweet) %>
+        </li>
+    <% end %>
+</ul>
+
+<br>
+
+<%= link_to 'New Tweet', new_tweet_path %>
