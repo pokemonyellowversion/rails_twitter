@@ -1,8 +1,4 @@
 class TweetsController < ApplicationController
-	include ActionView::Helpers::DateHelper
-	def index
-	  @tweet = time_ago_in_words(Date.today - 1)
-	end
 	
 	before_action :set_tweet, only: [:show, :edit, :update, :destroy]
 
@@ -11,7 +7,6 @@ class TweetsController < ApplicationController
 	end	
 
 	def show
-		@current_Time = Time.now
 	end	
 
 	def new

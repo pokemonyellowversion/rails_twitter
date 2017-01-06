@@ -4,7 +4,7 @@
     <% @tweets.each do |tweet| %>
         <li>
             <strong><%= tweet.handle %></strong>
-            <%= time_ago_in_words(Date.today - 1) %> ago<br> 
+            <%= time_ago_in_words(tweet.created_at.localtime) + " ago" %><br>
             <%= tweet.content %><br>
             <%= link_to "View Tweet", tweet_path(tweet) %>
         </li>
