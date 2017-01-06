@@ -20,8 +20,9 @@
 @import "bootstrap";
 
 .navbar-default {
-    background-color: white;
+    background-color: #fff;
     border-color: #E7E7E7;
+    height: 46px;
 }
 
 .navbar-form {
@@ -30,6 +31,57 @@
 
 header { 
 	background: url(http://66.media.tumblr.com/fe1e883ce09f96e57fb2e5d748898e65/tumblr_o0958tKyo61uzh6soo1_1280.png) 50% 50% no-repeat; /* 50% 50% centers image in div */
+	background-color: #fff;
 	width: 100%;
 	height: 280px;
+}
+
+.navbar2 {
+	background-color: #fff;
+	height: 60px;
+}
+
+#navbar2 {
+	background-color: #fff;
+}
+
+body {
+	background-color: #f5f8fa;
+}
+
+.ProfileAvatar {
+	display: block;
+}
+
+.ProfileAvatarImg {
+	border-radius: 8px;
+	height: 200px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 200px;
+	z-index: 1;
+}
+
+.SignUp {
+	background-color: #e1e8ed;
+	border: 1px solid #e1e8ed;
+	border-radius: 6px;
+	padding: 15px;
+}
+
+.AlsoLike {
+	background-color: #fff;
+	border: 1px solid #e1e8ed;
+	border-radius: 5px;
+	font-size: 12px;
+	padding: 10px;
+}
+
+.WorldwideTrends {
+	background-color: #fff;
+	border: 1px solid #e1e8ed;
+	border-radius: 5px;
+	font-size: 12px;
+	padding: 10px;
 }
