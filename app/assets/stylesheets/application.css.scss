@@ -19,14 +19,20 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.navbar-default {
+.navbar {
     background-color: #fff;
     border-color: #E7E7E7;
     height: 46px;
+    font-size: 13px;
 }
 
-.navbar-form {
-	border-radius: 0;
+.form-control {
+    height: 32px;
+    padding: 5px 27px 6px 12px;
+    font-size: 12px;
+    line-height: 1;
+    border: 1px solid #e1e8ed;
+    border-radius: 21px;
 }
 
 header { 
@@ -70,6 +76,11 @@ div {
 	position: absolute;
 	top: 0;
 	width: 100%;
+}
+
+.navbar3 {
+	height: 45px;
+	font-size: 18px;
 }
 
 .SignUp {
