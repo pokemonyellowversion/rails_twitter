@@ -1,7 +1,7 @@
-<div class="panel panel-default">
+<div class="panel">
 	<% @tweets.each do |tweet| %>
   <div class="panel-heading">
-  	<strong><%= tweet.handle %></strong>
+  	<strong>&#64;<%= tweet.handle %></strong>
     <%= time_ago_in_words(tweet.created_at.localtime) + " ago" %>
   </div>
   <div class="panel-body">
