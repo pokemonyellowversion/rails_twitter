@@ -1,15 +1,15 @@
-<h1>Tweets</h1>
-
-<ul>
-    <% @tweets.each do |tweet| %>
-        <li>
-            <strong><%= tweet.handle %></strong>
-            <%= time_ago_in_words(tweet.created_at.localtime) + " ago" %><br>
-            <%= tweet.content %><br>
-            <%= link_to "View Tweet", tweet_path(tweet) %>
-        </li>
-    <% end %>
-</ul>
+<div class="panel panel-default">
+	<% @tweets.each do |tweet| %>
+  <div class="panel-heading">
+  	<strong><%= tweet.handle %></strong>
+    <%= time_ago_in_words(tweet.created_at.localtime) + " ago" %>
+  </div>
+  <div class="panel-body">
+  <%= tweet.content %><br>
+  <%= link_to "View Tweet", tweet_path(tweet) %>
+  </div>
+  <% end %>
+</div>
 
 <br>
 
