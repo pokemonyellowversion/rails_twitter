@@ -41,6 +41,8 @@ header {
 	width: 100%;
 	height: 280px;
 	position: relative;
+	margin: 0;
+	display: block;
 }
 
 .navbar2 {
@@ -61,7 +63,7 @@ div {
 	display: block;
 }
 
-div.col-md-4 {
+div.row.app-content {
 	margin-top: 10px;
 }
 
@@ -72,12 +74,12 @@ div.col-md-4.tweet-stream.a {
 	text-transform: uppercase;
 }
 
-span {
-	font-size: 18px;
-	font-weight: 500;
-	text-align: center;
-	display: block;
-	margin-top: 0;
+.navbar-brand {
+    float: left;
+    padding: 15px 1px;
+    font-size: 18px;
+    line-height: 20px;
+    height: 50px;
 }
 
 .ProfileAvatar {
@@ -89,7 +91,7 @@ span {
 	position: absolute;
 	width: 200px;
 	z-index: 100;
-	margin-left: 65px;
+	padding-left: 80px;
 }
 
 .ProfileAvatarImg {
@@ -103,9 +105,8 @@ span {
 }
 
 .sidebar-left {
-	position: absolute;
 	margin-top: 120px;
-	margin-left: 65px;
+	padding-left: 80px;
 }
 
 .navbar3 {
@@ -140,7 +141,30 @@ span {
 	border: 1px solid #e1e8ed;
 	border-radius: 6px;
 	padding: 15px;
-	margin-right: 65px;
+}
+
+p.SignUp {
+	color: #8899a6;
+	font-size: 14px;
+	text-align: left;
+	display: block;
+}
+
+h3 {
+    color: #66757f;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 26px;
+}	
+
+.btn {
+	background-color: #1da1f2;
+	border: 0;
+	box-shadow: none;
+	font-size: 16px;
+	font-weight: normal;
+	color: #fff;
+	padding: 11px 16px;
 }
 
 .sidebar-right {
@@ -150,5 +174,33 @@ span {
 	font-size: 12px;
 	padding: 10px;
 	margin-top: 10px;
-	margin-right: 65px;
+}
+
+div.SignUp {
+	width: 300px;
+}
+
+div.sidebar-right {
+	width: 300px;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.tweet-stream {
+	width: 588px;
+	padding-left: 20px;
+}
+
+.profile-info {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	margin-bottom: 10px;
+	word-wrap: break-word;
+}
+
+.col-md-3 {
+	padding: 0;
 }
