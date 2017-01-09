@@ -43,17 +43,20 @@ header {
 	position: relative;
 	margin: 0;
 	display: block;
+	box-shadow: inset 0 0 1px 1px rgba(0,0,0,0.2);
 }
 
 .navbar2 {
 	background-color: #fff;
 	height: 60px;
+	border-bottom: 1px solid #e1e8ed;
 }
 
 #navbar2 {
 	background-color: #fff;
 	position: relative;
 	height: 60px;
+	border-bottom: 1px solid #e1e8ed;
 }
 
 body {
@@ -96,7 +99,6 @@ div.row.app-content {
 
 .ProfileAvatar {
 	background: transparent;
-
 	height: 200px;
 	position: absolute;
 	width: 200px;
@@ -134,10 +136,10 @@ div.row.app-content {
 	min-height: 51px;
 }
 
-.avatar-icon > img{
-	float: left;
+img.avatar-icon {
+	float: left !important;
 	margin: 3px;
-	align: left;
+	vertical-align: left !important;
 }
 
 .panel-body {
@@ -147,15 +149,11 @@ div.row.app-content {
 	line-height: 32px;
 	font-weight: 300;
 	letter-spacing: .01em;
-	padding-top: 0;
+	padding-top: 0 !important;
 }
 
 .panel-body-text {
 	float: left;
-}
-
-img {
-	vertical-align: left;
 }
 
 .panel-heading {
@@ -218,7 +216,7 @@ div.sidebar-right {
 
 .tweet-stream {
 	width: 588px;
-	padding-left: 20px;
+	margin: auto;
 }
 
 .profile-info {
@@ -227,9 +225,10 @@ div.sidebar-right {
 	line-height: 20px;
 	margin-bottom: 10px;
 	word-wrap: break-word;
+	width: 260px;
 }
 
-.col-md-3 {
+.col-md-3, .col-md-6 {
 	padding: 0;
 }
 

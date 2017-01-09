@@ -1,8 +1,6 @@
 <div class="panel">
 	<% @tweets.each do |tweet| %>
-  <div class="avatar-icon">
-    <img class="avatar-icon" src="http://is4.mzstatic.com/image/thumb/Purple49/v4/7f/03/0c/7f030ca7-449f-e70d-cf09-cf1a4e4d00b1/source/0x0ss-85.png" height="48" width="48">
-  </div>
+
   <div class="panel-heading">
   	<strong>Gudetama_Fanpage</strong> &#64;<%= tweet.handle %>
     <%= time_ago_in_words(tweet.created_at.localtime) + " ago" %>
