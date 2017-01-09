@@ -53,6 +53,7 @@ header {
 #navbar2 {
 	background-color: #fff;
 	position: relative;
+	height: 60px;
 }
 
 body {
@@ -67,11 +68,22 @@ div.row.app-content {
 	margin-top: 10px;
 }
 
-div.col-md-4.tweet-stream.a {
+.tweet-stats {
 	color: #66757f;
 	font-size: 11px;
 	letter-spacing: .02em;
 	text-transform: uppercase;
+	padding-top: 8px !important;
+	padding-bottom: 0 !important;
+	float: none !important;
+}
+
+.tweet-values {
+	font-size: 18px;
+	padding-top: 0 !important;
+	font-weight: 500;
+	display: block;
+	text-align: center;
 }
 
 .navbar-brand {
@@ -83,29 +95,28 @@ div.col-md-4.tweet-stream.a {
 }
 
 .ProfileAvatar {
-	background: #fff;
-	border: 5px solid #fff;
-	border-radius: 12px;
-	box-shadow: 0 1px 1px rgba(136,153,166,0.15);
+	background: transparent;
+
 	height: 200px;
 	position: absolute;
 	width: 200px;
 	z-index: 100;
+	padding-top: 180px;
 	padding-left: 80px;
 }
 
 .ProfileAvatarImg {
 	border-radius: 8px;
 	height: 100%;
-	left: 0;
 	position: absolute;
-	top: 0;
 	width: 100%;
-	z-index: 100;
+	border: 5px solid #fff;
+	border-radius: 12px;
+	box-shadow: 0 1px 1px rgba(136,153,166,0.15);
 }
 
 .sidebar-left {
-	margin-top: 120px;
+	margin-top: 40px;
 	padding-left: 80px;
 }
 
@@ -123,6 +134,12 @@ div.col-md-4.tweet-stream.a {
 	min-height: 51px;
 }
 
+.avatar-icon > img{
+	float: left;
+	margin: 3px;
+	align: left;
+}
+
 .panel-body {
 	border-bottom: 1px solid transparent;
 	border-color: #ddd;
@@ -130,10 +147,20 @@ div.col-md-4.tweet-stream.a {
 	line-height: 32px;
 	font-weight: 300;
 	letter-spacing: .01em;
+	padding-top: 0;
+}
+
+.panel-body-text {
+	float: left;
+}
+
+img {
+	vertical-align: left;
 }
 
 .panel-heading {
 	background-color: #fff;
+	padding-bottom: 0;
 }
 
 .SignUp {
@@ -155,6 +182,7 @@ h3 {
     font-size: 22px;
     font-weight: 300;
     line-height: 26px;
+    margin-top: 0;
 }	
 
 .btn {
@@ -203,4 +231,11 @@ div.sidebar-right {
 
 .col-md-3 {
 	padding: 0;
+}
+
+.name {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 1;
+	margin-right: 5px;
 }
